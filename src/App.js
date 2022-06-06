@@ -1,16 +1,15 @@
 import './App.css';
 import freeCodeCampLogo from './images/FreeCodeCamp_logo.png';
-import './components/Button'
 import Button from './components/Button';
 
 function App() {
 
-  const clickHandling = () => {
+  const clickHandle = () => {
     console.log('Click');
   }
 
   const restartButton = () => {
-    console.log('Reiniciar')
+    console.log('Reiniciar');
   }
 
   return (
@@ -26,14 +25,11 @@ function App() {
         <Button
           text='Click'
           isClickButton={true}
-          clickHandling={clickHandling}
-        />
+          clickHandling={clickHandle} />
         <Button
-        text='Restart'
-        isClickButton={false}
-        clickHandling={restartButton}
-        
-        />
+          text='Restart'
+          isClickButton={false}
+          clickHandling={restartButton} />
       </div>
     </div>
   );
