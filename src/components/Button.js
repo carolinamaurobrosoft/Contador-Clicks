@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheet/Button.css'
 
 function Button({ text, isClickButton, clickHandling}){
   return (
